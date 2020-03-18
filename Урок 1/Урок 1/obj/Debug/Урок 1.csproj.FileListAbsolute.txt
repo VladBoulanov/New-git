@@ -1,0 +1,7 @@
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\bin\Debug\Урок 1.exe.config
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\bin\Debug\Урок 1.exe
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\bin\Debug\Урок 1.pdb
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\obj\Debug\Урок 1.csprojAssemblyReference.cache
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\obj\Debug\Урок 1.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\obj\Debug\Урок 1.exe
+C:\Users\Vlad\source\repos\Урок 1\Урок 1\obj\Debug\Урок 1.pdb
