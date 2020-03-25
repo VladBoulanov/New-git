@@ -1,0 +1,7 @@
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\bin\Debug\Просто.exe.config
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\bin\Debug\Просто.exe
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\bin\Debug\Просто.pdb
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\obj\Debug\Просто.csprojAssemblyReference.cache
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\obj\Debug\Просто.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\obj\Debug\Просто.exe
+C:\Users\Vlad\Documents\GitHub\New-git\Просто\Просто\obj\Debug\Просто.pdb
