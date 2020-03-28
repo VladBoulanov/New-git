@@ -20,8 +20,8 @@ namespace Урок_3
             Console.WriteLine("Какой объем сока (в литрах) требуется упаковать?");
             double v = double.Parse(Console.ReadLine());
             Console.WriteLine("Вам потребуются следующие контейнеры: ");
-            int v20 = (int)v / 20;
-            int v5 = (int)(v - v20 * 20) / 5 ;
+            int v20 = (int)Math.Floor(v / 20);
+            int v5 = (int)Math.Floor((v - v20 * 20) / 5) ;
             int v3 = (int)(v - v20 * 20 - v5 * 5);
             int presence = 0;
             if (v3 > 0)
