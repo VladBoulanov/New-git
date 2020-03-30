@@ -13,8 +13,18 @@ namespace Просто
             string s=null;
             do
             {
-                Console.WriteLine("Введите строку ");
-                s = Console.ReadLine();
+                if (s.Length <= 15)
+                {
+                    Console.WriteLine("Введите строку ");
+                    s = Console.ReadLine();
+                    Console.WriteLine("Entered string lenghtis {0}", s.Length);
+                }
+                else if (s.Length > 15)
+                {
+                    Console.WriteLine("Введите строку ");
+                    s = Console.ReadLine();
+                    Console.WriteLine("To long string.Try another");
+                }continue;
             } while (s != "exit");
         }
     }
