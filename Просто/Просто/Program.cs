@@ -10,22 +10,13 @@ namespace Просто
     {
         static void Main(string[] args)
         {
-            string s=null;
-            do
+            int[] mass = new int[5] { 1, 2, 3, 4, 5 };
+            int sum=0;
+            while(sum<mass.Length)
             {
-                if (s.Length <= 15)
-                {
-                    Console.WriteLine("Введите строку ");
-                    s = Console.ReadLine();
-                    Console.WriteLine("Entered string lenghtis {0}", s.Length);
-                }
-                else if (s.Length > 15)
-                {
-                    Console.WriteLine("Введите строку ");
-                    s = Console.ReadLine();
-                    Console.WriteLine("To long string.Try another");
-                }continue;
-            } while (s != "exit");
+                sum +=mass[4];
+            }
+
         }
     }
 }
