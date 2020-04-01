@@ -1,0 +1,7 @@
+C:\Users\Vlad\source\repos\While2\While2\bin\Debug\While2.exe.config
+C:\Users\Vlad\source\repos\While2\While2\bin\Debug\While2.exe
+C:\Users\Vlad\source\repos\While2\While2\bin\Debug\While2.pdb
+C:\Users\Vlad\source\repos\While2\While2\obj\Debug\While2.csprojAssemblyReference.cache
+C:\Users\Vlad\source\repos\While2\While2\obj\Debug\While2.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\source\repos\While2\While2\obj\Debug\While2.exe
+C:\Users\Vlad\source\repos\While2\While2\obj\Debug\While2.pdb
