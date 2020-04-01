@@ -1,0 +1,7 @@
+c:\users\vlad\source\repos\For2\For2\bin\Debug\For2.exe.config
+c:\users\vlad\source\repos\For2\For2\bin\Debug\For2.exe
+c:\users\vlad\source\repos\For2\For2\bin\Debug\For2.pdb
+c:\users\vlad\source\repos\For2\For2\obj\Debug\For2.csprojAssemblyReference.cache
+c:\users\vlad\source\repos\For2\For2\obj\Debug\For2.csproj.CoreCompileInputs.cache
+c:\users\vlad\source\repos\For2\For2\obj\Debug\For2.exe
+c:\users\vlad\source\repos\For2\For2\obj\Debug\For2.pdb
