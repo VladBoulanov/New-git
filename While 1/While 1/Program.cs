@@ -10,31 +10,13 @@ namespace While_1
     {
         static void Main(string[] args)
         {
-            var marks = new[]
-            {
-                new[]{2,3,3,2,3},
-                new[]{2,4,5,3},
-                null,
-                new[]{5,5,5,5}
-            };
-            double sum = 0;
-            double Sum = 0;
-            for (int i = 0; i < marks.Length; i++)
-            {
-                if (marks[i] == null)
-                {
-                    Console.WriteLine("N/A");
-                    continue;
-                }
-
-                for (int j = 0; j < marks[i].Length; j++)
-                {
-                    sum += marks[i][j];
-                }
-                Console.WriteLine($"Средний балл за день N{i + 1}=" + sum / marks[i].Length);
-                Sum += sum / marks[i].Length;
-            }
-            Console.WriteLine($"Средний оценочный балл =" + Sum / marks.Length);
+            Console.WriteLine("Введите первое число");
+            var s1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите второе число");
+            var s2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(s1 + "+" + s2 + "=" + s1 + s2);
+            Console.WriteLine(String.Format("{0}+{1}={2}", s1, s2, s1 + s2));
+            Console.WriteLine($"{s1}-{s2}={s1 - s2}");
         }
     }
 }
