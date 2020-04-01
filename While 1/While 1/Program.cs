@@ -10,13 +10,16 @@ namespace While_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите первое число");
-            var s1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Введите второе число");
-            var s2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(s1 + "+" + s2 + "=" + s1 + s2);
-            Console.WriteLine(String.Format("{0}+{1}={2}", s1, s2, s1 + s2));
-            Console.WriteLine($"{s1}-{s2}={s1 - s2}");
+            string text = " lprem impast  oufd  dollar  ";
+            text = text.Trim();
+            Console.WriteLine(text);
+            text = text.Substring(15);
+            Console.WriteLine(text);
+            text = text.Substring(21);
+            Console.WriteLine(text);
+            string text1 = text.Substring(6);
+            string text2 = text1.Substring(0, text.Length - 14);
+            Console.WriteLine(text2.ToUpper());
         }
     }
 }
