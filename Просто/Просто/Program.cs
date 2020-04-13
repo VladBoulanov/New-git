@@ -12,18 +12,40 @@ namespace Просто
         {
             Pet pet1 = new Pet
             {
-                Kind ="Cat";
-                pet1.Name = "Johny";
-                pet1.Sex = 'M';
-                pet1.Age = 4;
-            }
+                Kind = "Cat",
+                Name = "Johny",
+                Sex = 'M',
+                Age = 4
+            };
+            Console.WriteLine($"Kind: {pet1.Kind}, Name: {pet1.Name},Sex: {pet1.Sex},Age: {pet1.Age}");
         }
     }
     public class Pet
     {
-        public string Kind ;
-        public string Name;
-        public char Sex;
-        public int Age;
+        public string Kind { get; set; }
+        public string Name { get; set; }
+        public char Sex { get; set; }
+        private int age;
+        public int Age
+        {
+           get
+            {
+                return age;
+            }
+            set
+            {
+                if(value > 0 && value < 100)
+                {
+                    age = value;
+                }
+            }
+        }
+        public string Description
+        {
+            get
+            {
+                return $"{Name} is a {Kind} ({Sex}) of {Age} years old.";
+            }
+        }
     }
 }
