@@ -10,13 +10,14 @@ namespace Просто
     {
         static void Main(string[] args)
         {
-            int[] mass = new int[5] { 1, 2, 3, 4, 5 };
-            int sum=0;
-            while(sum<mass.Length)
-            {
-                sum +=mass[4];
-            }
-
+            
         }
+    }
+    public class Pet
+    {
+        public string Kind ;
+        public string Name;
+        public char Sex;
+        public int Age;
     }
 }
