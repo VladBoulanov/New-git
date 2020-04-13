@@ -10,7 +10,13 @@ namespace Просто
     {
         static void Main(string[] args)
         {
-            
+            Pet pet1 = new Pet
+            {
+                Kind ="Cat";
+                pet1.Name = "Johny";
+                pet1.Sex = 'M';
+                pet1.Age = 4;
+            }
         }
     }
     public class Pet
