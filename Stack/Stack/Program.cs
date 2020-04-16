@@ -10,26 +10,29 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            var s = Console.ReadLine();
-            char[] s1 = s.ToCharArray(); 
+            var scobcka = Console.ReadLine();            
             Stack<char> stack = new Stack<char>();
-            for (int i = 0;i<s.Length;i++)
+            for (int i = 0;i<scobcka.Length;i++)
             {
-                    if(s1[i] == '(' ||  s1[i] == '[')
+                    if(scobcka[i] == '(' ||  scobcka[i] == '[')
                     {
-                        stack.Push(s1[i]);                        
+                        stack.Push(scobcka[i]);                        
+                    }
+                    else if(scobcka[i] == ')' ||  scobcka[i] == ']')
+                    {
+                        Console.WriteLine("var scobcka = {0} - False",scobcka[i]);                       
                     }
 
-                else if (s1[i] == ')' || s1[i] == ']')
+                else if (scobcka[i] == ')' || scobcka[i] == ']')
                 {
-                    var Sp = stack.Pop();
-                    if (s1[i] == ')' && Sp == '(' || s1[i] == ']' && Sp == '[')
+                    var Spack = stack.Pop();
+                    if (scobcka[i] == ')' && Spack == '(' || scobcka[i] == ']' && Spack == '[')
                     {
-                        Console.WriteLine("True");
+                        Console.WriteLine("var scobcka = {0} - True", scobcka[i]);
                     }
                     else
                     {
-                        Console.WriteLine("False");
+                        Console.WriteLine("var scobcka = {0} - False", scobcka[i]);
                     }
                 }
 
