@@ -10,42 +10,28 @@ namespace Просто
     {
         static void Main(string[] args)
         {
-            Pet pet1 = new Pet
-            {
-                Kind = "Cat",
-                Name = "Johny",
-                Sex = 'M',
-                Age = 4
-            };
-            Console.WriteLine($"Kind: {pet1.Kind}, Name: {pet1.Name},Sex: {pet1.Sex},Age: {pet1.Age}");
+          
         }
     }
-    public class Pet
+    public class BaseDocument
     {
-        public string Kind { get; set; }
-        public string Name { get; set; }
-        public char Sex { get; set; }
-        private int age;
-        public int Age
+        public string Title { get; set; }
+        public string Number { get; set; }
+        public DateTimeOffset IssueDate { get; set; }
+        public string Description { get; }
+        public void WriteToConsole()
         {
-           get
-            {
-                return age;
-            }
-            set
-            {
-                if(value > 0 && value < 100)
-                {
-                    age = value;
-                }
-            }
+            Console.WriteLine(Description);
         }
-        public string Description
+    }
+    public class Passport:BaseDocument
+    {
+        public string Country { get; set; }
+        public string PersonName { get; set; }
+        public string newDescription { get; }
+        public void newWriteToConsole()
         {
-            get
-            {
-                return $"{Name} is a {Kind} ({Sex}) of {Age} years old.";
-            }
+            Console.WriteLine(Description);
         }
     }
 }
