@@ -11,7 +11,7 @@ namespace Logi
     {
         static void Main(string[] args)
         {
-            var clw = new MultipleLogWriter();
+            var clw = new ConsoleLogWriter();
             var flw = new FileLogWriter();
             using (var fl = new MultipleLogWriter(clw, flw))
             {
