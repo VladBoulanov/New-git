@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Logi
 {
-    public class ConsoleLogWriter: ILogWriter, IDisposable
+    public class ConsoleLogWriter: ILogWriter
     {
-        public ConsoleLogWriter()
+        public ConsoleLogWriter(string _writer = "log.txt")
         {
+            Console.WriteLine(_writer);
         }
 
         private const string _logFormat = "{0:yyyy-MM-ddThh:mm:ss}+000\t{1}\t{2}";
-
+        
 
         public void LogError(string message)
         {
@@ -39,8 +40,19 @@ namespace Logi
 
         }
 
-        public void Dispose()
-        {
-        }
+        
+        
+            private static ConsoleLogWriter instance;
+
+            private ConsoleLogWriter() { }
+
+            public static ConsoleLogWriter GetInstance()
+            {
+                if (instance == null)
+                    instance = new ConsoleLogWriter();
+                return instance;
+            }
+        
+    
     }
 }

@@ -51,5 +51,17 @@ namespace Logi
                 _writer.Dispose();
             }
         }
+       
+            private static FileLogWriter instance;
+
+            private FileLogWriter() { }
+
+            public static FileLogWriter GetInstance()
+            {
+                if (instance == null)
+                    instance = new FileLogWriter();
+                return instance;
+            }
+        
     }
 }

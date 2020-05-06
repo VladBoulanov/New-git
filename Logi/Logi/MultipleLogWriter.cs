@@ -15,6 +15,11 @@ namespace Logi
             _writers = writers;
         }
 
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+
         public void LogError(string message)
         {
             foreach (ILogWriter writer in _writers)
@@ -38,15 +43,6 @@ namespace Logi
                 writer.LogWarning(message);
             }
         }
-        public void Dispose()
-        {
-            foreach (ILogWriter writer in _writers)
-            {
-                if (writer is IDisposable)
-                {
-                    ((IDisposable)writer).Dispose();
-                }
-            }
-        }
+       
     }
 }
