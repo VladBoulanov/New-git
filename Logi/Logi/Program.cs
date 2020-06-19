@@ -11,9 +11,9 @@ namespace Logi
     {
         static void Main(string[] args)
         {
-            var clw = new ConsoleLogWriter();
-            var flw = new FileLogWriter();
-            using (var fl = new MultipleLogWriter(clw, flw))
+            ConsoleLogWriter singletone = ConsoleLogWriter.Instance;
+            FileLogWriter singletone1 = FileLogWriter.Instance;
+            using (var fl = new MultipleLogWriter(singletone, singletone1))
             {
                 fl.LogInfo("Info message");
                 Thread.Sleep(40);

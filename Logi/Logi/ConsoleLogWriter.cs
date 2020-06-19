@@ -8,10 +8,7 @@ namespace Logi
 {
     public class ConsoleLogWriter: ILogWriter
     {
-        public ConsoleLogWriter(string _writer = "log.txt")
-        {
-            Console.WriteLine(_writer);
-        }
+       
 
         private const string _logFormat = "{0:yyyy-MM-ddThh:mm:ss}+000\t{1}\t{2}";
         
@@ -44,15 +41,22 @@ namespace Logi
         
             private static ConsoleLogWriter instance;
 
-            private ConsoleLogWriter() { }
+            private ConsoleLogWriter(string _writer = "log.txt") { Console.WriteLine(_writer); }
 
-            public static ConsoleLogWriter GetInstance()
+            public static ConsoleLogWriter Instance
+            {
+            get
+            {
+                return instance;
+            } 
+            set
             {
                 if (instance == null)
                     instance = new ConsoleLogWriter();
-                return instance;
+            }
             }
         
-    
+       
+                
     }
 }

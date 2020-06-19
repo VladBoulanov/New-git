@@ -12,11 +12,9 @@ namespace Logi
     {
         private StreamWriter _writer;
 
-        public FileLogWriter(string logFile = "log.txt")
-        {
-            _writer = new StreamWriter(File.Open(logFile, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.Read));
-            _writer.BaseStream.Seek(0, SeekOrigin.End);
-        }
+        public string logFile = "log.txt";
+
+
 
         private const string _logFormat = "{0:yyyy-MM-ddThh:mm:ss}+000\t{1}\t{2}";
         public void LogError(string message)
@@ -54,14 +52,27 @@ namespace Logi
        
             private static FileLogWriter instance;
 
-            private FileLogWriter() { }
+            private FileLogWriter()
+        {
+            
+        
+            _writer = new StreamWriter(File.Open(logFile, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.Read));
+            _writer.BaseStream.Seek(0, SeekOrigin.End);
+        
+        }
 
-            public static FileLogWriter GetInstance()
+            public static FileLogWriter Instance
+            {
+            get
+            {
+                return instance;
+            }
+            set
             {
                 if (instance == null)
                     instance = new FileLogWriter();
-                return instance;
             }
+        }
         
     }
 }
